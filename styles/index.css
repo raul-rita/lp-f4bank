@@ -10,8 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+/*SECÃO HERO*/
 .hero {
     width: 100%;
     height: 600px;
@@ -89,31 +91,155 @@
     background-color: #FFBD59;
 }
 
+/* SEÇÃO SOBRE NÓS */
 
+.sobre-nos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    min-height: 600px;
+}
 
+.texto-sobre-nos {
+    width: 55%;
+    text-align: justify;
+}
+
+.texto-sobre-nos h1 {
+    color: #FF914D;
+    font-size: 40px ;
+}
+
+.texto-sobre-nos p {
+    color: black;
+}
+
+.imagem-sobre-nos img {
+    width: 450px;
+}
+
+/* SEÇÃO CARTÃO DE CRÉDITO */
+
+.cartao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFBD59;
+}
+.cartao-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    min-height: 450px;
+}
+
+.texto-cartao {
+    width: 55%;
+    text-align: justify;
+}
+
+.texto-cartao h1, p {
+    color: #ffffff;
+}
+
+.texto-cartao h1 {
+    font-size: 40px;
+}
+
+.texto-cartao button {
+    padding: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FF914D;
+}
+
+.texto-cartao button:hover {
+    background-color: #FF914D;
+    color: #ffffff;
+    transition: 2s;
+}
+
+.imagem-cartao img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+/* SEÇÃO CONTA CORRENTE */
+
+.conta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFBD59;
+}
+.conta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    min-height: 450px;
+}
+
+.texto-conta {
+    width: 55%;
+    text-align: justify;
+}
+
+.texto-conta h1, p {
+    color: #ffffff;
+}
+
+.texto-conta h1 {
+    font-size: 40px;
+}
+
+.texto-conta button {
+    padding: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FF914D;
+}
+
+.texto-conta button:hover {
+    background-color: #FF914D;
+    color: #ffffff;
+    transition: 2s;
+}
+
+.imagem-conta img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+/*RESPONSIVIDADE*/
 
 @media (max-width:425px) {
-
+    
+    /* SEÇÃO HERO */
     .hero {
-        /* width: 100%; */
-        height: 700px;
+        height: 770px;
         display: flex;
-        /* justify-content: center; */
         align-items: flex-start;
-       
-
         background-image: url(../images/hero-bg-cel.jpg);
-        background-position: top;
+        background-position: bottom;
         background-color: #FF914D;
     }
+
     .hero-content{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
-     
-
         width: 90%;
         margin: 0;
     }
@@ -121,5 +247,52 @@
     .formulario {
         margin: 0;
         width: 85%;
+    }
+
+    /* SEÇÃO SOBRE NÓS */
+    .sobre-nos {
+        width: 100%;
+        justify-content: center;
+        padding: 30px 0;
+    }
+
+    .texto-sobre-nos {
+        width: 90%;
+    }
+
+    .imagem-sobre-nos {
+        display: none;
+    }
+
+    /* SEÇÃO CARTÃO DE CRÉDITO */
+
+    .cartao-content {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    .texto-cartao{
+        width: 90%;
+    }
+
+    .texto-cartao h1 {
+        font-size: 35px;
+    }
+
+    .texto-cartao button {
+        width: 100%;
+    }
+
+    .imagem-cartao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem-cartao img{
+        /* width: 380px; */
+        width: 90%;
     }
 }
