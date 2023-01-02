@@ -67,7 +67,7 @@
 .formulario form div input {
     width: 100%;
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     border-bottom: 1px solid #FF914D;   
 }
@@ -89,6 +89,7 @@
 
 .formulario form button:hover {
     background-color: #FFBD59;
+    transition: 2s;
 }
 
 /* SEÇÃO SOBRE NÓS */
@@ -108,7 +109,6 @@
 
 .texto-sobre-nos h1 {
     color: #FF914D;
-    font-size: 40px ;
 }
 
 .texto-sobre-nos p {
@@ -144,10 +144,6 @@
     color: #ffffff;
 }
 
-.texto-cartao h1 {
-    font-size: 40px;
-}
-
 .texto-cartao button {
     padding: 20px;
     background-color: #ffffff;
@@ -175,7 +171,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #FFBD59;
+    background-color: #ffffff;
 }
 .conta-content {
     display: flex;
@@ -190,34 +186,45 @@
     text-align: justify;
 }
 
-.texto-conta h1, p {
-    color: #ffffff;
+.texto-conta h1 {
+    color: #FF914D;
 }
 
-.texto-conta h1 {
-    font-size: 40px;
+.texto-conta p {
+    color: #000000;
 }
 
 .texto-conta button {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #FF914D;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    color: #FF914D;
+    color: #ffffff;
 }
 
 .texto-conta button:hover {
-    background-color: #FF914D;
+    background-color: #FFBD59;
     color: #ffffff;
     transition: 2s;
 }
 
+.imagem-conta {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
 .imagem-conta img {
-    width: 450px;
+    height: 350px;
     border-radius: 10px;
 }
+
+/* SEÇÃO CONTATO */
+    .contato {
+        display: none;
+    }
 
 /*RESPONSIVIDADE*/
 
@@ -278,10 +285,6 @@
         width: 90%;
     }
 
-    .texto-cartao h1 {
-        font-size: 35px;
-    }
-
     .texto-cartao button {
         width: 100%;
     }
@@ -292,7 +295,52 @@
         justify-content: center;
     }
     .imagem-cartao img{
-        /* width: 380px; */
         width: 90%;
+    }
+
+    /* SEÇÃO CONTA CORRENTE */
+
+    .conta-content {
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        min-height: 0;
+        padding: 30px 0;
+    }
+
+    .texto-conta{
+        width: 90%;
+    }
+
+    .texto-conta button {
+        width: 100%;
+    }
+
+    .imagem-conta {
+        display: none;
+    }
+
+    /*seção contato*/
+
+    .contato {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 30px 0 0 0;
+        background-color: #FF914D;
+    }
+
+    .contato-content {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contato-content div {
+        display: flex;
+        gap: 10px;
     }
 }
