@@ -4,12 +4,13 @@
 
   A proposta do exercício era construir uma landing page simplificada de forma a exibir os produtos para atrair clientes.
 
-<h2>Tecnologias </h2>
+<h2>Tecnologias e ferramentas</h2>
 
 Foram utilizadas no projeto as seguintes tecnologias e ferramentas:
 
 * HTML
 * CSS
+* Figma
 
 <h2 id="link">Link para a visualização do site</h2>
  <a href="https://apathetic-scale.surge.sh/" target= _blank>Clique aqui!</a>
@@ -23,3 +24,10 @@ Foram utilizadas no projeto as seguintes tecnologias e ferramentas:
 * Seguir uma paleta de cores baseada na logomarca provida pelo cliente.
 * Conter, pelo menos, 2 seções diferentes.
  
+ <h2>Versão para Desktop</h2>
+ 
+ ![screencapture-127-0-0-1-5500-2023-01-02-17_43_17](https://user-images.githubusercontent.com/93088559/210278569-774b0385-5b6a-42e9-aa1d-25fcfa6d3b68.png)
+ 
+  <h2>Versão para Mobile</h2>
+ 
+![screencapture-127-0-0-1-5500-2023-01-02-17_43_56](https://user-images.githubusercontent.com/93088559/210278571-1996133f-c4f8-4cb0-ae36-4662a67b59ef.png)
