@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+
+/* Estilos do Header*/
+.header {
+    background-color: #FF914D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-content {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navegacao nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navegacao nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contato-icons {
+    display: flex;
+    gap: 20px;
+}
+
+/*Estilos do Footer*/
+
+.footer {
+    background-color: #FF914D;
+    display: flex;
+    /* height: 100px; */
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+/* Header */
+
+/* Celular */
+
+@media (max-width: 425px) {
+
+    .header-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navegacao {
+        display: none;
+    }
+
+    .contato-icons {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+}
+
